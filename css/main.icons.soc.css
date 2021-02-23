@@ -1,0 +1,20 @@
+
+  .socialIcons {
+    padding: 0;
+    list-style: none;
+    margin: auto;
+    height: 90px;
+    text-align: center;
+  }
+  .socialIcons li {
+    display: inline-block;
+    margin: auto 10px;
+  }
+  .socialIcons li a {
+    text-align: center;
+    font-size: 2rem;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    color: lightgrey;
+  }

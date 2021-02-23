@@ -1,0 +1,279 @@
+.header-agro-1 {
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header-agro-1 .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section {
+    position: relative;
+}
+
+.section-1 {
+    padding-left: 40px;
+}
+.section-3-bcg-img {
+    text-align: center;
+}
+
+.section-4 {
+    padding-left: 40px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.section-4-bcg-img {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.section-4-img-logo {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 16px;
+}
+
+.section-4-img-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 8px;
+}
+
+.section-4 h1 {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+}
+
+.section-4 span {
+    font-weight: 100;
+}
+
+.section-4 h4 {
+    font-family: "Raleway", sans-serif;
+    text-transform: none;
+}
+
+.section-5-text {
+    font-family: "Brusher", sans-serif;
+    text-transform: none;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.section-5-text-color-1 {
+    color: #635729;
+}
+
+.section-5-text-color-2 {
+    color: #ff6262;
+}
+
+.section-5-text-color-3 {
+    color: #ffbb4c;
+}
+
+.section-5-text-color-4 {
+    color: #fcdb5a;
+}
+
+.section-5-text-color-5 {
+    color: #5e9a4b;
+}
+
+.section-6-bcg-img {
+    background-image: url(../media/bg_2.jpg);
+    background-size: cover;
+    height: 70vh;
+    background-position: bottom;
+    background-attachment: fixed;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.section-6-text {
+    color: ivory;
+    padding: 10vh 7vh;
+}
+
+.section-6-text h2 {
+    line-height: 1.2;
+    font-weight: bolder;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    white-space: pre-line;
+}
+
+.section-6-text h2 span {
+    font-weight: 100;
+}
+
+.section-7 {
+    padding: 10vh;
+}
+
+.section-8-col-img {
+    display: flex;
+    flex-wrap: wrap;
+}
+.section-8-effect-col {
+    width: 25%;
+}
+
+.section-8-figure {
+    border: 1vh solid white;
+    background: white;
+    height: 600px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-8-figure a{
+    display: inline-block;
+}
+.section-8-figure a div{
+    background: #000;  /* У блока, оборачивающего картинку при наведении будет просвечивать черный фон */
+    overflow: hidden;  /* Ограничиваем видиую область */
+}
+.section-8-figure a div img{
+    opacity: 1;
+    transition: opacity 124ms linear, transform 124ms linear;  /* Плавное изменение прозрачности и увеличения */
+	height: auto;
+    display: block; /* Убираем полосу под картинкий */
+}
+.section-8-figure a:hover div img{
+    opacity: 0.9; /* Высветляем картинку, но она становится темнее, так как под ней черный фон */
+    transform: scale(1.05); /* Увеличение картинки */
+}
+.section-8-figure a + a div{
+	background: #fff; /* Если необходимо высветление картинки при наведении, оборачивающий div должен иметь белый фон */
+}
+
+.section-8-figure a, .section-8-figure a div img {
+    min-width: 100%;
+    min-height: 100%;
+    flex-shrink: 0;
+}
+.section-8-wight-img {
+    width: 180%;
+}
+
+.section-9 {
+    background-image: url(../media/review_bg_1.png);
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+    padding-top: unset;
+    margin-bottom: 100px;
+}
+
+.title-h2 {
+    text-align: center;
+    text-decoration: none;
+}
+
+.title-h2 h2 {
+    line-height: 1.2;
+    font-family: "Raleway", sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    white-space: pre-line;
+}
+
+.title-h2 p {
+    line-height: 1.4;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #b3b3b3;
+    margin-top: 25px;
+    font-family: "Open-Sans", sans-serif;
+}
+
+.title-h2 span {
+    font-weight: 100;
+}
+
+.section-10 {
+    margin-top: 5vh;
+    background-image: url(../media/pineapple-mashrooms.png);
+    background-size: 100%;
+    background-position: center bottom;
+    height: 100vh;
+    padding-top: unset;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.section-11 {
+    background-color: #f9f9f9;
+    padding: 100px;
+}
+
+.section-11-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3vh;
+}
+
+.section-11-col-img, .section-11-col img {
+    width: 100%;
+}
+
+.section-12 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 16px;
+    padding: 100px;
+}
+
+.section-12 div {
+    text-align: center;
+}
+
+.section-13 {
+    background-color: #333;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.section-footer-dark {
+    background-color: #333;
+}
+.section-footer-dark p {
+    color: ivory;
+}
+
+.support {
+    color: #fcdb5a;
+    text-decoration: none
+}
+
+.support:active {
+    color: #fcdb5a;
+    text-decoration: none
+}
+
+.support:visited {
+    color: #666666;
+    text-decoration: none
+}
+
+.support:hover {
+    color: #339900;
+    text-decoration: underline
+}

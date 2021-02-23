@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Brusher";
+    src: url("../fonts/11730.ttf") format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../fonts/Raleway-ExtraLight.ttf") format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Open-Sans";
+    src: url("../fonts/OpenSansCondensed-Light.ttf") format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Times-New-Roman";
+    src: url("../fonts/Times-New-Roman.ttf") format("truetype");
+    font-display: swap;
+}

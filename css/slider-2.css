@@ -1,0 +1,123 @@
+
+
+.cont-col {
+    line-height: .8;
+    font-size: 10rem;
+    font-family: "Times-New-Roman", sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    color: #fcdb5a;
+    text-align: right;
+    margin-top: 50px;
+}
+.slider-ava {
+    display: flex;
+}
+.conteiner-slider-2 {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 1px;
+    font-family: "Times-New-Roman", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.slider-2 {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.slider__nav {
+    width: 12px;
+    height: 12px;
+    margin: 2rem 12px;
+    border-radius: 50%;
+    z-index: 10;
+    outline: 6px solid #ccc;
+    outline-offset: -6px;
+    box-shadow: 0 0 0 0 #ebe0b7, 0 0 0 0 #fcdb5a;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.slider__nav:checked {
+    -webkit-animation: check 0.5s linear forwards;
+    animation: check 0.5s linear forwards;
+}
+
+.slider__nav:checked:nth-of-type(1)~.slider__inner {
+    transform: translateX(0%);
+}
+
+.slider__nav:checked:nth-of-type(2)~.slider__inner {
+    transform: translateX(-25%);
+}
+
+.slider__nav:checked:nth-of-type(3)~.slider__inner {
+    transform: translateX(-50%);
+}
+
+.slider__nav:checked:nth-of-type(4)~.slider__inner {
+    transform: translateX(-75%);
+}
+
+.slider__inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400%;
+    height: 100%;
+    transition: all 1s ease-out;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.slider__contents {
+    height: 100%;
+    padding: 2rem;
+    text-align: justify;
+    display: flex;
+    flex: 1;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider__txt {
+    color: #999;
+    margin-bottom: 3rem;
+    white-space: pre-line;
+}
+
+@-webkit-keyframes check {
+    50% {
+        outline-color: #fcdb5a;
+        box-shadow: 0 0 0 12px #ebe0b7, 0 0 0 36px #fcdb5a;
+    }
+    100% {
+        outline-color: #fcdb5a;
+        box-shadow: 0 0 0 0 #ebe0b7, 0 0 0 0 #fcdb5a;
+    }
+}
+
+@keyframes check {
+    50% {
+        outline-color: #fcdb5a;
+        box-shadow: 0 0 0 12px #ebe0b7, 0 0 0 36px #fcdb5a;
+    }
+    100% {
+        outline-color: #fcdb5a;
+        box-shadow: 0 0 0 0 #ebe0b7, 0 0 0 0 #fcdb5a;
+    }
+}

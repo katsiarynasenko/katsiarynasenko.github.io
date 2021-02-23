@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css?family=Istok+Web);
+@keyframes slidy {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+.section-2 figure {
+  padding: 0;
+  margin: 0;
+  font-family: "Brusher", sans-serif;
+  font-weight: 100;
+}
+
+div#captioned-gallery {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-1 {
+  position: relative;
+  width: 500%;
+  font-size: 0;
+  animation: 60s slidy infinite;
+}
+
+.slider-1 figure {
+  width: 20%;
+  height: auto;
+  display: inline-block;
+  position: inherit;
+}
+
+.slider-1 img {
+  width: 100%;
+  height: auto;
+}
+
+.slider-1 figure figcaption {
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  color: #fcdb5a;
+  font-size: 9rem;
+  padding-left: 3rem;
+  padding-bottom: 25%;
+}
+
+.blueberries {
+  color: #206c8c;
+}
+
+.strawberry {
+  color: pink;
+}
+
+.vegetables {
+  color: greenyellow;
+}
+.products {
+  color: lavender;
+}

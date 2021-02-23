@@ -1,0 +1,236 @@
+.menu-img {
+    background-image: url(../media/vegetables-1.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center bottom;
+    background-attachment: fixed;
+    padding-top: unset;
+}
+
+.logo {
+    margin-left: 3rem;
+}
+
+.class-a {
+    color: ivory;
+}
+
+.col-agro-1 {
+    position: relative;
+    width: 75%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: 2rem;
+}
+
+.col-agro-1 p {
+    white-space: pre-line;
+}
+
+.title-agro-1 {
+    font-weight: 900;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    transition: color .3s ease-in-out;
+    margin: .67em 0;
+    font-size: 4rem;
+}
+
+.title-agro-1 span {
+    display: block;
+    font-size: 66.66667%;
+    font-weight: 100;
+    line-height: 1.1;
+    color: inherit;
+}
+
+.header-agro-1 {
+    color: #fff;
+}
+
+.section-grey {
+    padding-top: 5px;
+    padding-bottom: 140px;
+    background-color: rgb(240, 240, 240);
+    position: relative;
+    z-index: 0;
+}
+
+.content-text-img-1 {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 6rem;
+    padding: 1rem;
+}
+
+.content-text-img-2 {
+    margin-top: 0;
+}
+
+.text-agro-1 {
+    white-space: pre-line;
+}
+
+.textcols-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    height: 48%;
+    font-family: "Open-Sans", sans-serif;
+    line-height: 1.6;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.text-img-agro-1 {
+    max-width: 100%;
+    height: auto;
+    padding-top: 1rem;
+}
+
+.textcols-item+.textcols-item {
+    margin-left: 5%;
+}
+
+h2, h3 {
+    line-height: 1.2;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: xx-large;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h2 span, h3 span {
+    font-weight: 100;
+}
+
+.benefits__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.benefits__header {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+.benefits__element {
+    width: 30%;
+}
+
+.benefits__icon {
+    display: block;
+    width: 60px;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.benefits__element p {
+    text-align: center;
+    line-height: 1.3;
+}
+
+.benefits__number {
+    font-size: 3.6rem;
+    font-weight: 900;
+    color: #fcdb5a;
+}
+
+.benefits__title {
+    color: #cdcdcd;
+    font-size: 1.2rem;
+}
+
+.section-dark {
+    background-color: #333;
+}
+
+.section-dark-container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    text-align: center;
+    color: ivory;
+}
+
+.section-dark-heading {
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+.section-dark-heading h2 {
+    font-weight: 900;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    line-height: 1.1;
+    font-size: 4rem;
+    color: ivory;
+}
+
+.ymaps-layers-pane {
+    filter: brightness(50%);
+    -ms-filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+    -moz-filter: brightness(50%);
+    -o-filter: brightness(50%);
+    min-height: 255px;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-maps, .section-footer {
+    padding: 0;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.footer-nav-col {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    height: 30%;
+}
+
+.footer-nav-col+.footer-nav-col {
+    margin-left: 3%;
+}
+
+footer {
+    padding-top: 60px;
+    padding-bottom: 20px;
+}

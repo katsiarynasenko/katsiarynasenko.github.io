@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+.menu-main {
+  list-style: none;
+  margin: 0px 0 5px;
+  padding: 25px 0 5px;
+  text-align: right;
+  position: relative;
+}
+
+.menu-main-li {
+  display: inline-block;
+}
+
+.menu-main-li:last-child:after {
+  content: none;
+}
+
+.class-a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+  color: black;
+}
+
+
+
+.class-a:before, .class-a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #fcdb5a;
+  transition: .8s;
+}
+
+.class-a:hover:before, .menu-main .current:before {
+  left: 0;
+}
+
+.class-a:hover:after, .menu-main .current:after {
+  right: 0;
+}
+
+@media (max-width: 550px) {
+  .menu-main {
+    padding-top: 0;
+  }
+  .menu-main-li {
+    display: block;
+  }
+  .menu-main-li:after {
+    content: none;
+  }
+  .class-a {
+    padding: 25px 0 20px;
+    margin: 0 30px;
+  }
+}
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 50%;
+  z-index: 10;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  list-style:none;
+  background: #fcdb5a;;
+}
+nav .submenu {
+  -webkit-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+.submenu li a {
+  color: ivory;
+  text-decoration: none;
+
+}
+nav ul li:hover .submenu {
+  -webkit-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  transform: scaleY(1);
+}
