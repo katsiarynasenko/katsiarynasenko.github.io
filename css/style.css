@@ -12,29 +12,90 @@
     align-items: center;
 }
 
-section {
-    position: relative;
-}
-
 .section-1 {
     padding-left: 40px;
 }
-.section-3-bcg-img {
-    text-align: center;
+
+.section-3-container {
+    padding: 20px 30px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 900px;
 }
 
-.section-4 {
+.image-stack {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.image-stack img {
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+}
+
+.image-stack img:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.image-stack_item-bottom {
+    grid-column: 4/-1;
+    grid-row: 1;
+}
+
+.image-stack_item-bottom img {
+    width: 100%;
+    display: block;
+}
+
+.image-stack_item-center {
+    grid-column: 3/-4;
+    grid-row: 1;
+    z-index: 3;
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 15%;
+    right: 30%;
+    width: 65%;
+    height: 60%;
+    border: 10px inset #fcdb5a;
+}
+
+.image-stack_item-center img {
+    width: 75%;
+    display: block;
+}
+
+.image-stack_item-top {
+    grid-row: 1;
+    grid-column: 1/span 8;
+    padding-top: 20%;
+    z-index: 5;
+}
+
+.image-stack_item-top img {
+    width: 75%;
+    display: block;
+}
+
+.section-4-bcg {
+    position: relative;
     padding-left: 40px;
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
-.section-4-bcg-img {
+.section-4-img {
     position: absolute;
     top: 5%;
     left: 5%;
     padding-top: 100px;
     padding-bottom: 100px;
+    z-index: -10;
 }
 
 .section-4-img-logo {
@@ -90,6 +151,10 @@ section {
     color: #5e9a4b;
 }
 
+.section-6 h2 {
+    color: ivory;
+}
+
 .section-6-bcg-img {
     background-image: url(../media/bg_2.jpg);
     background-size: cover;
@@ -127,6 +192,7 @@ section {
     display: flex;
     flex-wrap: wrap;
 }
+
 .section-8-effect-col {
     width: 25%;
 }
@@ -141,25 +207,36 @@ section {
     align-items: center;
 }
 
-.section-8-figure a{
+.section-8-figure a {
     display: inline-block;
 }
-.section-8-figure a div{
-    background: #000;  /* У блока, оборачивающего картинку при наведении будет просвечивать черный фон */
-    overflow: hidden;  /* Ограничиваем видиую область */
+
+.section-8-figure a div {
+    background: #000;
+    /* У блока, оборачивающего картинку при наведении будет просвечивать черный фон */
+    overflow: hidden;
+    /* Ограничиваем видиую область */
 }
-.section-8-figure a div img{
+
+.section-8-figure a div img {
     opacity: 1;
-    transition: opacity 124ms linear, transform 124ms linear;  /* Плавное изменение прозрачности и увеличения */
-	height: auto;
-    display: block; /* Убираем полосу под картинкий */
+    transition: opacity 124ms linear, transform 124ms linear;
+    /* Плавное изменение прозрачности и увеличения */
+    height: auto;
+    display: block;
+    /* Убираем полосу под картинкий */
 }
-.section-8-figure a:hover div img{
-    opacity: 0.9; /* Высветляем картинку, но она становится темнее, так как под ней черный фон */
-    transform: scale(1.05); /* Увеличение картинки */
+
+.section-8-figure a:hover div img {
+    opacity: 0.9;
+    /* Высветляем картинку, но она становится темнее, так как под ней черный фон */
+    transform: scale(1.05);
+    /* Увеличение картинки */
 }
-.section-8-figure a + a div{
-	background: #fff; /* Если необходимо высветление картинки при наведении, оборачивающий div должен иметь белый фон */
+
+.section-8-figure a+a div {
+    background: #fff;
+    /* Если необходимо высветление картинки при наведении, оборачивающий div должен иметь белый фон */
 }
 
 .section-8-figure a, .section-8-figure a div img {
@@ -167,6 +244,12 @@ section {
     min-height: 100%;
     flex-shrink: 0;
 }
+
+.section-8-figure h2 {
+    position: absolute;
+    color: ivory;
+}
+
 .section-8-wight-img {
     width: 180%;
 }
@@ -234,6 +317,18 @@ section {
     width: 100%;
 }
 
+.section-11-col img {
+    -webkit-transition: all 5s ease-out;
+    -moz-transition: all 5s ease-out;
+    -o-transition: all 5s ease-out;
+}
+
+.section-11-col img:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
 .section-12 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -254,6 +349,7 @@ section {
 .section-footer-dark {
     background-color: #333;
 }
+
 .section-footer-dark p {
     color: ivory;
 }

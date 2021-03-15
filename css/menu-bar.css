@@ -1,18 +1,37 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
-.menu-main {
+nav {
+  text-align: center;
+}
+
+nav ul {
   list-style: none;
-  margin: 0px 0 5px;
-  padding: 25px 0 5px;
-  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  display: block;
+  color: #222;
+}
+
+.menu-main>li {
+  display: inline-block;
   position: relative;
 }
 
-.menu-main-li {
-  display: inline-block;
+.menu-main>li>a {
+  position: relative;
+  padding: 10px 15px;
+  font-family: 'Ubuntu Condensed', cursive;
+  font-size: 1.5em;
+  line-height: 1;
+  letter-spacing: 3px;
 }
 
-.menu-main-li:last-child:after {
-  content: none;
+.topmenu li:hover a:before {
+  transform: translate(-50%, 0);
+  opacity: 1;
 }
 
 .class-a {
@@ -21,15 +40,13 @@
   letter-spacing: 2px;
   position: relative;
   padding-bottom: 20px;
-  margin: 0 34px 0 30px;
+  margin: 5px;
   font-size: 17px;
   text-transform: uppercase;
   display: inline-block;
   transition: color .2s;
   color: black;
 }
-
-
 
 .class-a:before, .class-a:after {
   content: "";
@@ -66,38 +83,39 @@
     margin: 0 30px;
   }
 }
+
 .submenu {
   position: absolute;
+  z-index: 4;
+  left: 50%;
   top: 100%;
-  left: 0;
-  width: 50%;
-  z-index: 10;
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-  font-size: 17px;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-family: 'Ubuntu Condensed', sans-serif;
-  list-style:none;
-  background: #fcdb5a;;
+  width: 150px;
+  padding: 15px 0 15px;
+  margin-top: 5px;
+  background: #fcdb5a;
+  border-radius: 5px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+  box-sizing: border-box;
+  visibility: hidden;
+  opacity: 0;
+  transform: translate(-50%, 20px);
+  transition: .3s;
 }
-nav .submenu {
-  -webkit-transform: scaleY(0);
-  -ms-transform: scaleY(0);
-  transform: scaleY(0);
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-}
-.submenu li a {
-  color: ivory;
-  text-decoration: none;
 
+.menu-main>li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, 0);
 }
-nav ul li:hover .submenu {
-  -webkit-transform: scaleY(1);
-  -ms-transform: scaleY(1);
-  transform: scaleY(1);
+
+.submenu a {
+  font-family: 'Ubuntu Condensed', serif;
+  font-size: 11px;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+  transition: .3s linear;
+}
+
+.submenu a:hover {
+  background: ivory;
 }
